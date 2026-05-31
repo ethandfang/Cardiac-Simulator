@@ -18,6 +18,3 @@ Built as an educational tool for cardiac physiology students. Not for clinical u
 
 ## Tech
 React · Vite · HTML Canvas
-
-## Disclaimer
-Educational use only. Not intended for clinical decision-making.
