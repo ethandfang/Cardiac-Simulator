@@ -15,6 +15,8 @@ Built as an educational tool for cardiac physiology students. Not for clinical u
 - Auto-detects and names the rhythm pattern based on current values
 - 6 arrhythmia presets
 - Highlights out-of-range values clinically
+- Live, adjustable quiz with feedback and rationales
+- Interactive measurement tools
 
 ## Tech
 React · Vite · HTML Canvas
