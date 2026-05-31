@@ -1,16 +1,23 @@
-# React + Vite
+# Heart Rhythm Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive ECG simulator built with React. Adjust heart rate, PR interval, 
+QRS duration, and ST elevation in real time and watch the waveform respond live — 
+like a cardiac monitor you can control.
 
-Currently, two official plugins are available:
+Includes presets for common arrhythmias: AFib, V-tach, bradycardia, tachycardia, 
+and first-degree heart block, each with a clinical description of what you're seeing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built as an educational tool for cardiac physiology students. Not for clinical use.
 
-## React Compiler
+## Features
+- Live scrolling ECG trace rendered on HTML canvas
+- Adjustable parameters via sliders (heart rate, PR interval, QRS duration, QT interval, ST elevation)
+- Auto-detects and names the rhythm pattern based on current values
+- 6 arrhythmia presets
+- Highlights out-of-range values clinically
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
+React · Vite · HTML Canvas
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Disclaimer
+Educational use only. Not intended for clinical decision-making.
