@@ -1,0 +1,165 @@
+.app {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 16px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.app-header {
+  padding: 4px 0;
+}
+
+.app h1 {
+  margin: 0;
+  text-align: left;
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  letter-spacing: 0.02em;
+  color: #101418;
+}
+
+.monitor-shell {
+  border: 1px solid #1f252c;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0a0a;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.monitor-shell canvas {
+  height: 300px !important;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(280px, 0.95fr);
+  gap: 16px;
+}
+
+.control-panel {
+  background: #e6e9ee;
+  color: #111820;
+  border: 1px solid #c8cfd9;
+  border-radius: 10px;
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+  height: 100%;
+}
+
+.control-row {
+  display: grid;
+  gap: 8px;
+}
+
+.control-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+}
+
+.preset-row {
+  margin-bottom: 4px;
+}
+
+.control-panel label {
+  font-weight: 600;
+}
+
+.control-panel input[type='range'] {
+  width: 100%;
+  accent-color: #39ff14;
+}
+
+.control-panel select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #b7bfca;
+  background: #f7f8fa;
+  color: #101820;
+}
+
+.info-panel {
+  background: #eef1f5;
+  border: 1px solid #d1d8e1;
+  border-radius: 10px;
+  padding: 16px;
+  color: #131b24;
+  display: grid;
+  gap: 12px;
+}
+
+.info-panel h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.info-description {
+  margin: 0;
+  line-height: 1.45;
+  color: #2a3643;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.metric-grid div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #d8dee7;
+}
+
+.metric-grid dt {
+  font-weight: 600;
+  color: #293848;
+}
+
+.metric-grid dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.info-footnote {
+  margin: 2px 0 0;
+  font-size: 0.92rem;
+  color: #3b4a58;
+}
+
+.disclaimer {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+  color: #5f6975;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .app h1 {
+    text-align: center;
+  }
+
+  .monitor-shell canvas {
+    height: 250px !important;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
