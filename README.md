@@ -13,7 +13,6 @@ Built as an educational tool for cardiac physiology students. Not for clinical u
 - Live scrolling ECG trace rendered on HTML canvas
 - Adjustable parameters via sliders (heart rate, PR interval, QRS duration, QT interval, ST elevation)
 - Auto-detects and names the rhythm pattern based on current values
-- 6 arrhythmia presets
 - Highlights out-of-range values clinically
 - Live, adjustable quiz with feedback and rationales
 - Interactive measurement tools
