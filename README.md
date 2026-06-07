@@ -18,4 +18,4 @@ Built as an educational tool for cardiac physiology students. Not for clinical u
 - Interactive measurement tools
 
 ## Tech
-React · Vite · HTML Canvas
+React · Vite
